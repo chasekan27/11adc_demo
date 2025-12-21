@@ -1,5 +1,4 @@
 cmake_minimum_required(VERSION 3.22)
+find_package(Zephyr)
 project(adc)
-set(BOARD nucleo_f411re)
-find_package(Zephyr REQUIRED HINTS ${ZEPHYR_BASE})
-target_sources(app PRIVATE src/main.c)
+target_sources(app PRIVATE src/main.c) 
